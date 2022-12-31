@@ -1,0 +1,24 @@
+// NOTE: after making changes to this file run:
+// cd /eth-dev/packages/eth-dev
+// yarn theme
+
+// https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less
+
+@import "~antd/lib/style/color/colorPalette.less";
+@import "~antd/dist/antd.less";
+@import "~antd/lib/style/themes/default.less";
+
+// These are shared variables that can be extracted to their own file
+// @primary-color: #00adb5;
+@border-radius-base: 4px;
+
+@link-color: @text-color;
+@icon-color: @primary-color;
+
+.highlight {
+  background-color: #f9f9f9;
+}
+
+a, h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
