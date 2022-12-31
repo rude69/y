@@ -1,0 +1,20 @@
+type WorldMatrix @entity {
+  id: ID!
+  x: Int!
+  y: Int!
+  player: Player
+  tokenAmountToCollect: BigInt!
+  healthAmountToCollect: BigInt!
+}
+
+type Player @entity {
+  id: ID!
+  x: Int!
+  y: Int!
+  address: Bytes!
+  fancyLoogieId: BigInt!
+  health: BigInt!
+  token: BigInt!
+  createdAt: BigInt!
+  transactionHash: String!
+}
