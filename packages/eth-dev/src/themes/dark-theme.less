@@ -1,0 +1,46 @@
+// NOTE: after making changes to this file run:
+// cd /eth-dev/packages/eth-dev
+// yarn theme
+
+// https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less
+
+@import "~antd/lib/style/color/colorPalette.less";
+@import "~antd/dist/antd.less";
+@import "~antd/lib/style/themes/dark.less";
+
+// These are shared variables that can be extracted to their own file
+@primary-color: #2caad9;
+@border-radius-base: 4px;
+
+@component-background: #212121;
+@body-background: #212121;
+@popover-background: #212121;
+@border-color-base: #6f6c6c;
+@border-color-split: #424242;
+@table-header-sort-active-bg: #424242;
+@card-skeleton-bg: #424242;
+@skeleton-color: #424242;
+@table-header-sort-active-bg: #424242;
+
+// LINK
+@link-color: @primary-color;
+@link-hover-color: color(~`colorPalette('@{link-color}', 5)`);
+@link-active-color: color(~`colorPalette('@{link-color}', 7)`);
+@link-decoration: none;
+@link-hover-decoration: none;
+@link-focus-decoration: none;
+@link-focus-outline: 0;
+
+@icon-color: @primary-color;
+
+.highlight {
+  background-color: #3f3f3f;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
+p {
+  line-height: 2.2;
+}
